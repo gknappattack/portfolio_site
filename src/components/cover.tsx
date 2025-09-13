@@ -24,7 +24,7 @@ export default function Cover() {
             </div>
             <div className="flex">
                 <p className="inline-block text-2xl w-[100%]">
-                💨 Distance Runner in Training 🏃🏻
+                 🏃🏻 Distance Runner in Training 💨
               </p>
             </div>
             <div className="flex">
