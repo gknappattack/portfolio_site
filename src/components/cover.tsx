@@ -1,6 +1,6 @@
 export default function Cover() {
     return (
-      <div className="mx-auto w-full max-w-3xl gap-y-2">
+      <div className="mx-auto w-full max-w-3xl gap-y-2 text-[#e9f1f7]">
         <div className=" flex justify-start gap-x-10">
           <div>
             <span className="relative flex shrink-0 overflow-hidden w-[200px] h-[300px] rounded-[24px]">
