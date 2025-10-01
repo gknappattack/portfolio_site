@@ -1,5 +1,4 @@
 import NavBar from '@/components/navbar';
-import Introduction from '@/components/introduction';
 import Cover from "@/components/cover"
 import TabPage from '@/components/tabpage';
 
