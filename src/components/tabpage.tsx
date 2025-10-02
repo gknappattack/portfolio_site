@@ -61,8 +61,8 @@ export default function TabPage() {
           <Project
           title="Coming soon!"
           icon="😊"
-          description="Will be updated soon with information about me!"
-          link="#"/>
+          description="Will be updated soon with information about me! For now, click here to view my full GitHub!"
+          link="https://github.com/gknappattack"/>
         </div>
       )
     };
