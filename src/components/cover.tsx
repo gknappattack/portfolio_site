@@ -19,7 +19,7 @@ export default function Cover() {
             </div>
             <div className="flex">
                 <p className="inline-block text-2xl w-[100%]">
-                📊 Data Science Masters Student 🎓
+                📊 Data Science Master&apos;s Student 🎓
               </p>
             </div>
             <div className="flex">

@@ -8,7 +8,7 @@ export default function TabPage() {
 
     const tabs = [
       {id: "tab1", label:"Projects"},
-      {id: "tab2", label:"Academic Work"},
+      {id: "tab2", label:"Academic Publications"},
       {id: "tab3", label:"About Me"}
     ];
 
@@ -30,6 +30,11 @@ export default function TabPage() {
           icon="📚"
           description="Proof of concept of a Virtual Bookshelf webpage that was presented at tha American Library Association conference in July 2022."
           link="https://github.com/gknappattack/ALA2022Bookshelf"/>
+          <Project
+          title="TBX Splitter"
+          icon="💻"
+          description="Python application with GUI for splitting XML or TBX (proprietary file type used in Computer Assisted Translation (CAT) software) based on input parameters."
+          link="https://github.com/gknappattack/TBXSplitter"/>
         </div>
       ),
       tab2: (
