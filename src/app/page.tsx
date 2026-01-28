@@ -4,9 +4,9 @@ import TabPage from '@/components/tabpage';
 
 export default function Home() {
   return (
-    <div className="flex flex-col relative gap-48 bg-[#131b23] h-screen overflow-y-auto">
+    <div className="relative flex min-h-screen flex-col gap-16 overflow-y-auto bg-[#131b23] sm:gap-48">
       <NavBar />
-      <div className="flex flex-col gap-50">
+      <div className="flex flex-col gap-12 sm:gap-20">
         <Cover />
         <TabPage/>
       </div>

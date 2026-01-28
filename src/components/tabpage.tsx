@@ -14,7 +14,7 @@ export default function TabPage() {
 
     const tabContent = {
       tab1: (
-        <div className="flex flex-col gap-x-5 p-4">
+        <div className="flex flex-col gap-5 p-4">
           <Project
           title="DRAGN-Town Quests"
           icon="🐉"
@@ -38,7 +38,7 @@ export default function TabPage() {
         </div>
       ),
       tab2: (
-        <div className="flex flex-col gap-x-5 p-4">
+        <div className="flex flex-col gap-5 p-4">
           <Project
           title="Personalized Quest and Dialogue Generation in Role-Playing Games: A Knowledge Graph and Language Model-based Approach"
           icon="🐉"
@@ -57,7 +57,7 @@ export default function TabPage() {
         </div>
       ),
       tab3: (
-        <div className="flex flex-col gap-x-5 p-4">
+        <div className="flex flex-col gap-5 p-4">
           <Project
           title="Coming soon!"
           icon="😊"
@@ -69,13 +69,13 @@ export default function TabPage() {
 
 
     return (
-      <div className="justify-around bg-[#e9f1f7] mx-3 rounded-2xl">
-        <div className="grid grid-cols-3 gap-5 p-5 mt-3">
+      <div className="justify-around bg-[#e9f1f7] mx-3 rounded-2xl sm:mx-6">
+        <div className="grid grid-cols-1 gap-3 p-4 mt-3 sm:grid-cols-3 sm:gap-5 sm:p-5">
           {tabs.map((tab) => (
             <button key={tab.id}
-            className={`px-4 py-4 font-semibold shadow-s shadow-black ${
-              activeTab == tab.id ? "text-white p-6 rounded bg-[#131b23] shadow-md"
-              : "p-4 rounded bg-white text-[#131b23] shadow-md"
+            className={`flex min-h-12 items-center justify-center break-words rounded-md px-3 py-3 text-center text-sm font-semibold leading-snug shadow-md transition-colors sm:min-h-14 sm:px-4 sm:py-4 sm:text-base ${
+              activeTab == tab.id ? "bg-[#131b23] text-white"
+              : "bg-white text-[#131b23]"
               }`}
               onClick={() => setActiveTab(tab.id)}
             >
