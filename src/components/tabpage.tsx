@@ -214,10 +214,10 @@ export default function TabPage({ activeTab, setActiveTab }: TabPageProps) {
 
     return (
         <div className="justify-around bg-[#e9f1f7] mx-3 rounded-2xl sm:mx-6">
-            <div className="grid grid-cols-1 gap-3 p-4 mt-3 sm:grid-cols-3 sm:gap-5 sm:p-5">
+            <div className="flex flex-wrap justify-center gap-3 p-4 mt-3 sm:gap-5 sm:p-5">
                 {tabs.map((tab) => (
                     <button key={tab.id}
-                            className={`flex min-h-12 items-center justify-center break-words rounded-md px-3 py-3 text-center text-sm font-semibold leading-snug shadow-md transition-colors sm:min-h-14 sm:px-4 sm:py-4 sm:text-base ${
+                            className={`flex min-h-12 w-full sm:w-auto sm:min-w-[200px] items-center justify-center break-words rounded-md px-3 py-3 text-center text-sm font-semibold leading-snug shadow-md transition-colors sm:min-h-14 sm:px-4 sm:py-4 sm:text-base ${
                                 activeTab == tab.id ? "bg-[#131b23] text-white"
                                     : "bg-white text-[#131b23]"
                             }`}
