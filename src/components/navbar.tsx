@@ -3,13 +3,27 @@
 import { useState } from "react";
 
 const navLinks = [
-  { label: "Projects", href: "#" },
-  { label: "Academic Works", href: "#" },
-  { label: "About Me", href: "#" },
+  { label: "History", id: "tab1" },
+  { label: "Projects", id: "tab2" },
+  { label: "Academic Works", id: "tab3" },
+  { label: "About Me", id: "tab4" },
 ];
 
-export default function NavBar() {
+interface NavBarProps {
+  setActiveTab: (tabId: string) => void;
+}
+
+export default function NavBar({ setActiveTab }: NavBarProps) {
   const [isOpen, setIsOpen] = useState(false);
+
+  const handleClick = (id: string) => {
+    setActiveTab(id);
+    setIsOpen(false);
+    const element = document.getElementById("tab-page");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <nav className="sticky top-0 z-10 bg-[#E9F1F7] after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10">
@@ -19,13 +33,13 @@ export default function NavBar() {
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex flex-wrap justify-center gap-2 sm:gap-4">
                 {navLinks.map((link) => (
-                  <a
+                  <button
                     key={link.label}
-                    href={link.href}
+                    onClick={() => handleClick(link.id)}
                     className="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-[#131b23] hover:text-white sm:text-lg"
                   >
                     {link.label}
-                  </a>
+                  </button>
                 ))}
               </div>
             </div>
@@ -61,13 +75,13 @@ export default function NavBar() {
         >
           <div className="flex flex-col gap-2 px-2">
             {navLinks.map((link) => (
-              <a
+              <button
                 key={link.label}
-                href={link.href}
-                className="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-[#131b23] hover:text-white"
+                onClick={() => handleClick(link.id)}
+                className="rounded-md px-3 py-2 text-left text-sm font-medium text-black hover:bg-[#131b23] hover:text-white"
               >
                 {link.label}
-              </a>
+              </button>
             ))}
           </div>
         </div>
