@@ -95,7 +95,7 @@ export default function TabPage({ activeTab, setActiveTab }: TabPageProps) {
                         "reconciliation, and create and send invoices to clients.",
                         "Learned free-lancing skills, PHP (Filament and Laravel), and web app hosting/deployment/maintenance " +
                         "with Heroku.",
-                        "Code is private and property of Shameck Arroyo and Sunny Consulting.",
+                        "Code is private and property of Shameck Arroyo and Sunny Consulting. Demo available upon request",
                     ]}
                     link=""/>
                 <Project
@@ -175,8 +175,8 @@ export default function TabPage({ activeTab, setActiveTab }: TabPageProps) {
                     icon="🏃‍♂️"
                     description={[
                         "Check out my Strava with links to all my recent runs and workouts.",
-                        "Next race will be the 2026 Kyoto Marathon in Kyoto, Japan on February 15, 2026, followed by the " +
-                        "Utah Valley marathon in early June."
+                        "Next race: Utah Valley Marathon (6/6/2026).",
+                        "Goal time: 3:2X:XX (PR = 3:47)"
                     ]}
                     link="https://www.strava.com/athletes/152953032"/>
                 <Project
