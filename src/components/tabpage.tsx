@@ -175,8 +175,9 @@ export default function TabPage({ activeTab, setActiveTab }: TabPageProps) {
                     icon="🏃‍♂️"
                     description={[
                         "Check out my Strava with links to all my recent runs and workouts.",
-                        "Next race: Utah Valley Marathon (6/6/2026).",
-                        "Goal time: 3:2X:XX (PR = 3:47)"
+                        "Previous race: Utah Valley Marathon (6/6/2026) - 3:24:27",
+                        "Next race: Twin Cities Marathon (10/4/2026).",
+                        "Goal time: 3:0X:XX (PR = 3:24)"
                     ]}
                     link="https://www.strava.com/athletes/152953032"/>
                 <Project
