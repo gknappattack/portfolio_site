@@ -20,22 +20,30 @@ export default function TabPage({ activeTab, setActiveTab }: TabPageProps) {
         tab1: (
             <div className="flex flex-col gap-5 p-4">
                 <Project
-                    title="Marathon Sports (Part-time: 2025 - Present)"
+                    title="Marathon Sports — Key Holder (Part-time: 2025 - Present)"
                     icon="🏃‍♂️"
                     description={[
-                        "Sales associate at specialized running footwear store while in graduate school.",
-                        "Use knowledge of running technology and bio-mechanics to recommend appropriate footwear and related products to customers.",
-                        "Manage high-customer volume in a relaxed manner while in a premier location at the Boston Marathon finish line.",
-                        "Participate in group runs and training programs to foster a positive running community in the area."
+                        "Promoted to Key Holder at the flagship Boylston Street store at the Boston Marathon finish line, overseeing opening/closing store operations and floor execution in a high-volume retail environment.",
+                        "Use knowledge of running technology and biomechanics to recommend appropriate footwear and related products to customers.",
+                        "Served as an official pacer for the 16-week ASICS x Bandit marathon training program and participate in group runs to foster a positive running community in the area."
                     ]}
                     link="https://www.marathonsports.com/locations/boston/"/>
+                <Project
+                    title="Sunny Consulting — Freelance Software Engineer (2025 - Present)"
+                    icon="💻"
+                    description={[
+                        "Develop and maintain full-stack production features for SunnyAccounting, a micro-accounting web application built with PHP (Laravel and Filament) and deployed on Heroku.",
+                        "Implemented transaction tracking, profit-and-loss reporting, yearly reconciliation, invoicing, automated vendor aggregation, and 1099 form generation workflows.",
+                        "Manage codebase version control, cloud hosting, and ongoing application maintenance via GitHub and Heroku."
+                    ]}
+                    link=""/>
                 <Project
                     title="Masters in Data Science (2025 - Present)"
                     icon="📚"
                     description={[
-                        "Masters in Data Science student at Boston University. Expected graduation May 2026.",
+                        "Master of Science in Data Science student at Boston University. Expected graduation Fall 2026.",
                         "Coursework includes: data science tools and methods, classical statistical methods, cryptography, AI Ethics, plus " +
-                        "additional chosen elective courses in electives in marketing analytics and supply chain analytics through the Questrom Business School."
+                        "additional chosen elective courses in marketing analytics and supply chain analytics through the Questrom Business School."
                     ]}
                     link="https://www.bu.edu/cds-faculty/programs-admissions/ms-data-science/"/>
                 <Project
@@ -60,7 +68,7 @@ export default function TabPage({ activeTab, setActiveTab }: TabPageProps) {
                     icon="📕"
                     description={[
                         "Assisted Psychology Librarian Emily Darowski with grant-funded research projects and self-guided machine learning projects for application within the library.",
-                        "Work culimnated with presentation of a Virtual ML-powered Bookshelf at the 2022 American Library Association (ALA) conference in July 2022 in Washington, D.C."
+                        "Work culminated with a presentation of a Virtual ML-powered Bookshelf at the 2022 American Library Association (ALA) conference in July 2022 in Washington, D.C."
                     ]}
                     link="https://lib.byu.edu/"/>
 
@@ -69,7 +77,7 @@ export default function TabPage({ activeTab, setActiveTab }: TabPageProps) {
                     icon="💻"
                     description={["Bachelor of Science Degree in Computer Science with an emphasis in Data Science",
                     "3.93 overall GPA",
-                    "Course work included: data structures, algorithms, operating systems, databases, software engineering tools, " +
+                    "Coursework included: data structures, algorithms, operating systems, databases, software engineering tools, " +
                     "large language models, deep learning, machine learning, natural language processing, software testing, " +
                     "Python, C++, Java"]}
                     link="https://cs.byu.edu/"/>
@@ -89,13 +97,13 @@ export default function TabPage({ activeTab, setActiveTab }: TabPageProps) {
                     title="Sunny Accounting Micro-accounting web application"
                     icon="💵"
                     description={[
-                        "Micro-accounting web application designed for Spanish speaking small businesses in Utah who primarily " +
-                        "process transactions in cash that want a more streamlined experience than Quickbooks. Set for beta release in Feb 2026.",
+                        "Micro-accounting web application designed for Spanish-speaking small businesses in Utah who primarily " +
+                        "process transactions in cash that want a more streamlined experience than QuickBooks. Released in beta in Feb 2026.",
                         "Allows users to record transactions processed, create a profit-loss statement, do yearly " +
                         "reconciliation, and create and send invoices to clients.",
-                        "Learned free-lancing skills, PHP (Filament and Laravel), and web app hosting/deployment/maintenance " +
+                        "Learned freelancing skills, PHP (Filament and Laravel), and web app hosting/deployment/maintenance " +
                         "with Heroku.",
-                        "Code is private and property of Shameck Arroyo and Sunny Consulting. Demo available upon request",
+                        "Code is private and property of Shameck Arroyo and Sunny Consulting. Demo available upon request.",
                     ]}
                     link=""/>
                 <Project
@@ -103,12 +111,12 @@ export default function TabPage({ activeTab, setActiveTab }: TabPageProps) {
                     icon="🏛"
                     description={[
                         "Scraped, parsed, cleaned, and analyzed data from the Massachusetts state legislature website and " +
-                        "PDF documents for roll call votes taken between 2002 and 2025 on behalf of local watchdog organization" +
+                        "PDF documents for roll call votes taken between 2002 and 2025 on behalf of local watchdog organization " +
                         "Act on Mass.",
                         "Created a Looker Studio dashboard (powered by Google BigQuery) that visualizes roll call votes " +
                         "allowing regular users to view voting trends and tendencies of their representatives.",
                         "Click to view our poster from Boston University SPARK Demo Day's presentation of group work on " +
-                        "MA roll call vote dashboard (actual code and final dataset is private and has been given to Act on Mass)",
+                        "MA roll call vote dashboard (actual code and final dataset is private and has been given to Act on Mass).",
                     ]}
                     link="https://docs.google.com/presentation/d/1JpXzSUOVsZEY48pFNW5QUipjkDgvueRD-fvmI0o_-tM/edit?usp=sharing"/>
                 <Project
@@ -118,7 +126,7 @@ export default function TabPage({ activeTab, setActiveTab }: TabPageProps) {
                         "Code associated with Personalized Quest and Dialogue Generation publication from the " +
                         "Computer-Human Interaction 2023 Conference.",
                         "Personal contributions focused on interfacing with the Neo4J graph database and pulling nodes " +
-                        "and connections that were most relevant to the conversation based on sematic similarity (cosine similarity score)."
+                        "and connections that were most relevant to the conversation based on semantic similarity (cosine similarity score)."
                     ]}
                     link="https://github.com/gknappattack/DRAGN-Town-Quests"/>
                 <Project
@@ -175,9 +183,8 @@ export default function TabPage({ activeTab, setActiveTab }: TabPageProps) {
                     icon="🏃‍♂️"
                     description={[
                         "Check out my Strava with links to all my recent runs and workouts.",
-                        "Previous race: Utah Valley Marathon (6/6/2026) - 3:24:27",
-                        "Next race: Twin Cities Marathon (10/4/2026).",
-                        "Goal time: 3:0X:XX (PR = 3:24)"
+                        "Recent races: Twin Cities Marathon (10/4/2026) & Utah Valley Marathon (6/6/2026).",
+                        "Half Marathon PR: 1:27 | Upcoming targets: Sub-18:00 5K (Dec 2026) & 2:55 Marathon (2027)."
                     ]}
                     link="https://www.strava.com/athletes/152953032"/>
                 <Project
@@ -190,10 +197,10 @@ export default function TabPage({ activeTab, setActiveTab }: TabPageProps) {
                     link="https://tomestone.gg/character/36335021/qzali-jihn"/>
                 <Project
                     title="JLPT N1"
-                    icon="‍🎌️"
+                    icon="🎌"
                     description={[
                         "JLPT N1 certified as of January 2026! N1 is the highest level offered in Japanese language proficiency testing in the U.S.",
-                        "9-years of Japanese speaking, reading and writing experience.",
+                        "9 years of Japanese speaking, reading, and writing experience.",
                         "Light freelance work in English to Japanese website translation."
                     ]}
                     link="https://www.jlpt.jp/e/about/levelsummary.html"/>
@@ -204,7 +211,7 @@ export default function TabPage({ activeTab, setActiveTab }: TabPageProps) {
                     description={[
                         "Started band on trumpet then got converted to euphonium in 7th grade",
                         "Played with the California All-Southern/All-State bands during high school",
-                        "Played all 5-years in the BYU Wind Symphony (the top wind ensemble in the school), including a 17-day tour" +
+                        "Played all 5 years in the BYU Wind Symphony (the top wind ensemble in the school), including a 17-day tour " +
                         "in Spain and Portugal to finish my college performance career."
                     ]}
                     link="https://bands.byu.edu/photos/2023-spain-portugal"/>

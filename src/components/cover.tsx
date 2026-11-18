@@ -29,7 +29,7 @@ export default function Cover() {
             </div>
             <div className="flex justify-center sm:justify-start">
                 <p className="inline-block w-full text-lg sm:text-2xl">
-                    🏻‍ Problem solver with code 💻
+                    🧑🏻‍💻 Problem solver with code 💻
               </p>
             </div>
           </div>
